@@ -19,6 +19,4 @@ module.exports = (dist)->
       if err? then return callback new gutil.PluginError('gulp-article-publish', 'File write failed')
       callback null, file
 
-  flush = (callback)->
-
-  through.obj transform, flush
+  through.obj transform

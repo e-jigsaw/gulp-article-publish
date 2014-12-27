@@ -12,7 +12,7 @@
   mkdir = require('mkdirp');
 
   module.exports = function(dist) {
-    var flush, transform;
+    var transform;
     transform = function(file, encoding, callback) {
       var contents, day, dirpath, month, year, _ref;
       if (dist == null) {
@@ -38,8 +38,7 @@
         return callback(null, file);
       });
     };
-    flush = function(callback) {};
-    return through.obj(transform, flush);
+    return through.obj(transform);
   };
 
 }).call(this);
