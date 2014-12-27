@@ -2,7 +2,12 @@
   "name": "gulp-article-publish",
   "version": "0.0.1",
   "description": "gulp plugin for article publish",
-  "keywords": [],
+  "keywords": [
+    "gulpplugin",
+    "article",
+    "publish",
+    "gulp"
+  ],
   "main": "build/index.js",
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
